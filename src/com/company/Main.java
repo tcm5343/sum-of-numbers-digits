@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
         try {
-
+            Scanner input = new Scanner(System.in);
             System.out.println("Enter a number: ");
+
             int num = input.nextInt();
             int sum = 0;
             String number = Integer.toString(num);
@@ -22,18 +22,20 @@ public class Main {
                 tempRemain = number.substring(0,i) + number.substring(i+1); // grabs remaining digits around tempNum
 
                 for (int j = 0; j < number.length()-1; j++){
-                    String tempRemain2 = tempRemain.substring(j,j+1); // grabs single digit
-                    String result = tempNum+tempRemain2; // concat tempNum with single digit from the remaining string
+                    // concat tempNum with single digit from the remaining string
+                    String result = tempNum+tempRemain.substring(j,j+1);
                     sum += Integer.parseInt(result);
                     System.out.print(result + " ");
                 }
             }
-            if (sum == 0) { System.out.println("Sum: " + number); }
+
+            if (sum == 0) { System.out.println("Sum: " + number); } // checks and prints the sum
             else { System.out.println("Sum: " + sum); }
+
         } // end of try
         catch (Exception e) {
             System.out.println("Error: Invalid Input");
-            main(args);
+            main(args); // resets program
         } // end of catch
     }
 }
