@@ -23,7 +23,7 @@ public class Main {
 
                 for (int j = 0; j < number.length()-1; j++){
                     // concat tempNum with single digit from the remaining string
-                    String result = tempNum+tempRemain.substring(j,j+1);
+                    String result = tempNum + tempRemain.substring(j,j+1);
                     sum += Integer.parseInt(result);
                     System.out.print(result + " ");
                 }

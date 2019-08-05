@@ -1,2 +1,2 @@
 # sumOfNumbersDigits
-Finds a (I may try for k number) number that equals to the sum of all k-digits numbers made from its digits (in pairs of two) ex. 132 = 13 + 32 + 21 + 31 + 23 + 12 = 132. Also try 264, 396, or even 35964. This program was inspired by this tweet: https://twitter.com/fermatslibrary/status/1154731850427961344
+Finds a number which is the sum of numbers made from its digits (in pairs of two) ex. 132 = 13 + 32 + 21 + 31 + 23 + 12 = 132. Also try 264, 396, or even 35964. This program was inspired by this tweet: https://twitter.com/fermatslibrary/status/1154731850427961344
